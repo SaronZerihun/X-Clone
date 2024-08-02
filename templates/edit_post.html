@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<section class="content">
+    <div class="header-container">
+        <img src="{% static 'img/logo.jpg' %}" alt="Twitter Logo" class="twitterlog">
+        <span class="home-text">Edit</span>
+    </div>
+
+    <hr class="separator-line">
+    
+
+    <section class="post_form">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your name" required value="{{post.name}}"/>
+            <textarea name="body" placeholder="{{post.body}}?" required value='{{post.body}}'></textarea>
+            <input type="file" name="image">
+
+            {% if post.image %}
+                <img src="{{ post.image.url }}" alt="Post Image" class="post-image" width="100%" height='350px' style='object-fit: contain;margin: 0 auto;'>
+                {% endif %}
+
+                <input type="submit" value="Update">
+
+           
+        </form>
+        <div class="butns" style="display: flex;">
+            <a href="/" style='margin-left: 10px;display: flex;width: 90%;margin: 10px auto;justify-content: flex-end;'><button style="padding: 8px 12px;border-radius: 4px;background-color: rgb(235, 66, 66);cursor: pointer;justify-content: flex-end;">Cancel</button></a>
+        </div>
+    </section>
+
+</section>
+
+
+{% endblock %}

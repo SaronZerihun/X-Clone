@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    color: #14171a;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: black;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.twitterlog {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.home-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.separator-line {
+    border: 0;
+    height: 1px;
+    background: #e1e8ed;
+    margin: 20px 0;
+}
+
+.post_form {
+    padding: 10px 0;
+}
+
+.post_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post_form input[type="text"],
+.post_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+}
+
+.post_form input[type="submit"] {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background: #1da1f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.posts li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e1e8ed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu_icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: black;
+    background-color: white;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+   
+}
+
+.menu a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name_body {
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.datetime {
+    font-size: 12px;
+    color: #657786;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    color: #1da1f2;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.like-button:focus {
+    outline: none;
+}
+
+.post-image {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+.confirm-delete {
+    text-align: center;
+}
+
+.confirm-delete h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.confirm-delete p {
+    margin-bottom: 20px;
+}
+
+.confirm-delete form {
+    display: inline-block;
+}
+
+.confirm-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cancel-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #ccc;
+    color: black;
+    border-radius: 4px;
+}
+
+.cancel-link:hover, .confirm-button:hover {
+    opacity: 0.8;
+}
